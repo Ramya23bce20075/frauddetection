@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Payments Fraud Detection</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+  <div class="container hero-section">
+    <div class="navbar">
+      <a href="{{ url_for('home') }}" class="nav-btn">Home</a>
+      <a href="{{ url_for('predict_page') }}" class="nav-btn">Predict</a>
+    </div>
+    <h2>Online Payments Fraud Detection</h2>
+    <div class="prediction-text">
+      The predicted fraud for the online payment is <b>{{ pred }}</b>
+    </div>
+  </div>
+</body>
+</html>
